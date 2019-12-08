@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    color: red;
+}
+header{
+    background-color: #dec2c2;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 50;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+li{
+    display: block;
+    width: fit-content;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #7b98da;
+    
+}
+li a{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+img{
+    width:100%;
+}
+.slidesjs-pagination{
+    display: none;
+}
+.container{
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+.loginForm{
+    width: 500px;
+    margin: auto;
+}
+.login-nav,.input-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.login-nav button{
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    background-color: tomato;
+}
+.label-nomal{
+    display: block;
+    width: 25%;
+    text-align: right;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.input-container input{
+    display: block;
+    width: 70%;
+    height: 35px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.submitBt{
+    width: 150px;
+    height: 35px;
+    background-color: teal;
+    border-radius: 5px;
+}
+#formResiter{
+    display: none;
+}
+#slides {
+    display:none;
+  }
+.error{
+    color: red;
+    font-size: 13px;
+    font-weight: 500;
+    width: 70%;
+}

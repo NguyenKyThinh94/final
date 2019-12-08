@@ -1,0 +1,14 @@
+doctype html  
+html(lang='en')  
+ head
+   title My blog
+   link(rel="stylesheet", href=("/public/css/style.css"))
+ body
+   h1 blog page
+   div.container
+    form(action="/blog/search", method="get")
+        input#search(type="text", name="name")
+        input#submit(type="submit", value="submit")
+    ul
+        each val, index in blogs.length? blogs: ['Khong co du lieu']
+            li= index + ': ' + val

@@ -1,0 +1,12 @@
+doctype html  
+html(lang='en')  
+ head
+   title My blog
+   link(rel="stylesheet", href=("/public/css/style.css"))
+ body
+   h1 Adim page
+   div.container
+    form(action="/admin/create", method="post")
+        input#blog(type="text", name="blog")
+        input#submit(type="submit", value="And")
+    

@@ -1,0 +1,56 @@
+doctype html  
+html(lang='en')  
+ head
+  title My blog
+  link(rel="stylesheet", href=("/public/css/style.css"))
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js")
+  script(src="/public/js/jquery.slides.min.js" defer )
+  script(src="/public/js/index.js" defer )
+ body
+  header
+    div.nav-bar
+      div.container
+        ul.nav-ul
+          li 
+            a(href='#') Home
+          li 
+            a(href='#') About US
+          li 
+            a(href='#') Login
+  div#slides.img-slice
+    <img src="/public/imgs/example-slide-1.jpg">
+    <img src="/public/imgs/example-slide-2.jpg">
+    <img src="/public/imgs/example-slide-3.jpg">
+    <img src="/public/imgs/example-slide-4.jpg">
+  div.container
+    div.loginForm
+      div.login-nav
+        button#resisterBT(type='button') Resister 
+        button#longinBT(type='button') Longin     
+      form#formLongin( action=('/longin') method='post')
+        div.input-container
+          label.label-nomal(for="user") User
+          input#userLG(type="text", name="user" placeholder='User Name')
+        div.input-container
+          label.label-nomal(for="password") Password
+          input#passwordLG(type='password', name='password' placeholder='password')
+        div.input-container
+          input#submitLoginBt.submitBt(type='submit', value='Longin')
+          label.error() #{massage}
+      form#formResiter( action=('/resiter') method='post')
+        div.input-container
+          label.label-nomal(for="user") User
+          input#user(type="text", name="user" placeholder='User Name')
+        div.input-container
+          label.label-nomal(for="user") Email
+          input#user(type="email", name="email" placeholder='example@users.com')
+        div.input-container
+          label.label-nomal(for="password") Password
+          input#password(type='password', name='password' placeholder='password')
+        div.input-container
+          label.label-nomal(for="password") Re Password
+          input#repassword(type='password', name='repassword' placeholder='repassword')
+        div.input-container
+          input#submitResisterBt.submitBt(type='submit', value='Residter')
+          label.error() #{massage}

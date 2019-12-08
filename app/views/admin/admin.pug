@@ -1,0 +1,13 @@
+doctype html  
+html(lang='en')  
+ head
+   title My blog
+   link(rel="stylesheet", href=("/public/css/style.css"))
+ body
+   h1 Admin page
+   div.container
+     ul
+        each val, index in list.length? list: ['Khong co du lieu']
+            li= index + ': ' + val
+     a(href='/admin/create') Creat New Blog
+     
